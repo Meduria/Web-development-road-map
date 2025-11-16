@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Development Roadmap</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background: #f0f4f8;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .roadmap {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .node {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-bottom: 5px;
+  }
+
+  .node:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  }
+
+  .children {
+    margin-left: 20px;
+    margin-top: 5px;
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .children .node {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    font-size: 0.95rem;
+  }
+
+  .subchildren .node {
+    background: linear-gradient(135deg, #1dd1a1, #10ac84);
+    font-size: 0.9rem;
+  }
+
+  .subchildren {
+    margin-left: 20px;
+    display: none;
+  }
+
+</style>
+</head>
+<body>
+
+<div class="roadmap">
+
+  <div class="node">Core Basics
+    <div class="children">
+      <div class="node">How the Web Works
+        <div class="subchildren">
+          <div class="node">Client Server</div>
+          <div class="node">HTTP</div>
+          <div class="node">DNS</div>
+        </div>
+      </div>
+      <div class="node">Internet Basics
+        <div class="subchildren">
+          <div class="node">Browsers</div>
+          <div class="node">Developer Tools</div>
+          <div class="node">Debugging</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="node">Frontend
+    <div class="children">
+      <div class="node">HTML
+        <div class="subchildren">
+          <div class="node">Tags</div>
+          <div class="node">Forms</div>
+          <div class="node">Semantics</div>
+        </div>
+      </div>
+      <div class="node">CSS
+        <div class="subchildren">
+          <div class="node">Selectors</div>
+          <div class="node">Flexbox</div>
+          <div class="node">Grid</div>
+          <div class="node">Responsive Design</div>
+        </div>
+      </div>
+      <div class="node">JavaScript
+        <div class="subchildren">
+          <div class="node">Variables</div>
+          <div class="node">Arrays</div>
+          <div class="node">Objects</div>
+          <div class="node">DOM</div>
+          <div class="node">Fetch API</div>
+          <div class="node">ES6</div>
+        </div>
+      </div>
+      <div class="node">Frontend Frameworks
+        <div class="subchildren">
+          <div class="node">React</div>
+          <div class="node">Vue</div>
+          <div class="node">Angular</div>
+        </div>
+      </div>
+      <div class="node">UI Libraries
+        <div class="subchildren">
+          <div class="node">Tailwind</div>
+          <div class="node">Bootstrap</div>
+        </div>
+      </div>
+      <div class="node">State Management
+        <div class="subchildren">
+          <div class="node">Redux</div>
+          <div class="node">Zustand</div>
+          <div class="node">Vuex</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="node">Backend
+    <div class="children">
+      <div class="node">Programming
+        <div class="subchildren">
+          <div class="node">Node.js</div>
+          <div class="node">Python Django</div>
+          <div class="node">Java Spring Boot</div>
+          <div class="node">PHP Laravel</div>
+        </div>
+      </div>
+      <div class="node">Databases
+        <div class="subchildren">
+          <div class="node">SQL</div>
+          <div class="node">PostgreSQL</div>
+          <div class="node">MySQL</div>
+          <div class="node">MongoDB</div>
+          <div class="node">Php</div>
+          <div class="node">PhpMyAdmin</div>
+        </div>
+      </div>
+      <div class="node">APIs
+        <div class="subchildren">
+          <div class="node">REST</div>
+          <div class="node">GraphQL</div>
+          <div class="node">Authentication</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="node">DevOps Basics
+    <div class="children">
+      <div class="node">Git</div>
+      <div class="node">GitHub</div>
+      <div class="node">CI CD</div>
+      <div class="node">Docker</div>
+      <div class="node">Linux Basics</div>
+    </div>
+  </div>
+
+  <div class="node">Testing
+    <div class="children">
+      <div class="node">Unit Testing</div>
+      <div class="node">Integration Testing</div>
+      <div class="node">Jest</div>
+      <div class="node">Cypress</div>
+    </div>
+  </div>
+
+  <div class="node">Deployment
+    <div class="children">
+      <div class="node">Netlify</div>
+      <div class="node">Vercel</div>
+      <div class="node">AWS</div>
+      <div class="node">Render</div>
+    </div>
+  </div>
+
+  <div class="node">Extra Skills
+    <div class="children">
+      <div class="node">Web Security
+        <div class="subchildren">
+          <div class="node">OWASP</div>
+          <div class="node">XSS</div>
+          <div class="node">CSRF</div>
+        </div>
+      </div>
+      <div class="node">Performance Optimization</div>
+      <div class="node">Accessibility</div>
+      <div class="node">SEO Basics</div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  const nodes = document.querySelectorAll('.node');
+
+  nodes.forEach(node => {
+    node.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const children = node.querySelector(':scope > .children, :scope > .subchildren');
+      if(children) {
+        children.style.display = children.style.display === 'flex' ? 'none' : 'flex';
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
